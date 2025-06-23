@@ -1,0 +1,60 @@
+{
+    "sources": [
+        {
+            "name": "BBC Pashto",
+            "url": "https://www.bbc.com/pashto",
+            "article_pattern": "a.gs-c-promo-heading",
+            "title_selector": "h1",
+            "content_selector": ".bbc-19j92fr"
+        },
+        {
+            "name": "VOA Pashto",
+            "url": "https://www.pashtovoa.com/",
+            "article_pattern": "div.media-block a",
+            "title_selector": "h1.title",
+            "content_selector": ".wsw"
+        },
+        {
+            "name": "Azadi Radio",
+            "url": "https://pa.azadiradio.com/",
+            "article_pattern": "a.img-wrap",
+            "title_selector": "h1",
+            "content_selector": ".wsw"
+        },
+        {
+            "name": "Tolonews",
+            "url": "https://tolonews.com/ps",
+            "article_pattern": "h4.title a",
+            "title_selector": ".article-details h1",
+            "content_selector": ".article-body"
+        },
+        {
+            "name": "Pajhwok",
+            "url": "https://www.pajhwok.com/ps",
+            "article_pattern": ".title a",
+            "title_selector": "h1",
+            "content_selector": ".field-body"
+        },
+        {
+            "name": "Taand",
+            "url": "https://taand.com/",
+            "article_pattern": ".jeg_post_title a",
+            "title_selector": ".jeg_post_title",
+            "content_selector": ".content-inner"
+        },
+        {
+            "name": "Mashaal Radio",
+            "url": "https://www.mashaalradio.com/",
+            "article_pattern": ".media-block__content a",
+            "title_selector": "h1",
+            "content_selector": ".wsw"
+        },
+        {
+            "name": "LarOneot",
+            "url": "https://www.laroneot.xyz/",
+            "article_pattern": "h2.entry-title a",
+            "title_selector": "h1.entry-title",
+            "content_selector": ".entry-content"
+        }
+    ]
+}
