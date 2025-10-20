@@ -62,11 +62,10 @@ except ImportError:
 
 # Load stopwords for text cleaning
 def load_stopwords():
-    """Load Pashto stopwords from the CSV file."""
-    stopwords_path = '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv'
+        """Load Pashto stopwords from file"""
+    stopwords_path = '/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv'
     
-    try:
-        if os.path.exists(stopwords_path):
+    if not os.path.exists(stopwords_path):
             stopwords = pd.read_csv(stopwords_path, header=None)[0].tolist()
             return set(stopwords)
         else:
@@ -439,9 +438,9 @@ class PashtoPdfExtractor:
 def main():
     """Main entry point for the script."""
     parser = argparse.ArgumentParser(description="Extract Pashto text from PDF files")
-    parser.add_argument('--input-dir', type=str, default='/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/pdf_documents',
+    parser.add_argument('--input-dir', type=str, default='/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/pdf_documents',
                         help='Directory containing PDF files')
-    parser.add_argument('--output-dir', type=str, default='/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/extracted_pdf_data',
+    parser.add_argument('--output-dir', type=str, default='/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/extracted_pdf_data',
                         help='Directory to save extracted text')
     parser.add_argument('--use-ocr', action='store_true', 
                         help='Use OCR for scanned PDFs (requires tesseract)')

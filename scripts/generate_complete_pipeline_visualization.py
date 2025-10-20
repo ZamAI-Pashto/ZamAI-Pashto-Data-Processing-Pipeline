@@ -10,7 +10,7 @@ import numpy as np
 import matplotlib.gridspec as gridspec
 
 # Create directories if they don't exist
-os.makedirs('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset', exist_ok=True)
+os.makedirs('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset', exist_ok=True)
 
 # Set up the figure with grid layout
 fig = plt.figure(figsize=(18, 12))
@@ -196,7 +196,7 @@ for i, (step, color) in enumerate(zip(flow_steps, flow_colors)):
                       boxstyle="round,pad=0.3" if color != 'black' else "round,pad=0"))
 
 # Save the figure with high resolution
-plt.savefig('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_complete_data_pipeline.png', dpi=300, bbox_inches='tight')
+plt.savefig('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_complete_data_pipeline.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("Complete visualization created at: /workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_complete_data_pipeline.png")
+print("Complete visualization created at: /workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_complete_data_pipeline.png")

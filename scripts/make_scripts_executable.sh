@@ -3,7 +3,7 @@
 # Created on: June 23, 2025
 
 # Set variables
-WORKSPACE_DIR="/workspaces/pashto-text-dataset"
+WORKSPACE_DIR="/workspaces/ZamAI-Pashto-Data-Processing-Pipeline"
 SCRIPT_DIR="$WORKSPACE_DIR/scripts"
 
 echo "========================================="

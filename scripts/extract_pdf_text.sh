@@ -1,8 +1,8 @@
 #!/bin/bash
-# Script to extract Pashto text from PDF files
+# Script to extract text from PDF documents
 
 # Set variables
-WORKSPACE_DIR="/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets"
+WORKSPACE_DIR="/workspaces/ZamAI-Pashto-Data-Processing-Pipeline"
 SCRIPT_DIR="$WORKSPACE_DIR/scripts"
 PDF_DIR="$WORKSPACE_DIR/pdf_documents"
 OUTPUT_DIR="$WORKSPACE_DIR/extracted_pdf_data"

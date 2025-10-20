@@ -36,16 +36,15 @@ logger = logging.getLogger(__name__)
 # Load stopwords for text cleaning
 def load_stopwords():
     try:
-        stopwords = pd.read_csv('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv', header=None)[0].tolist()
-        return set(stopwords)
-    except FileNotFoundError:
-        logger.warning("Stopwords file not found. Running create_stopwords.py...")
-        # If the stopwords file doesn't exist, run the script to create it
-        import subprocess
-        subprocess.run(['python', '/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/scripts/create_stopwords.py'])
-        # Try loading again
         try:
-            stopwords = pd.read_csv('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv', header=None)[0].tolist()
+        stopwords = pd.read_csv('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv', header=None)[0].tolist()
+        return stopwords
+    except FileNotFoundError:
+        logger.warning("Stopwords file not found. Creating one...")
+        # Try to create stopwords file
+        subprocess.run(['python', '/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/scripts/create_stopwords.py'])
+        try:
+            stopwords = pd.read_csv('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv', header=None)[0].tolist()
             return set(stopwords)
         except Exception as e:
             logger.error(f"Failed to load stopwords: {e}")
@@ -136,7 +135,7 @@ def extract_text_from_html(soup, selector):
         return ""
 
 class PashtoDataGatherer:
-    def __init__(self, sources=None, output_dir='/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/gathered_data', 
+    def __init__(self, sources=None, output_dir='/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data', 
                  max_articles_per_source=50, delay_between_requests=1.0):
         self.sources = sources if sources is not None else DEFAULT_SOURCES
         self.output_dir = output_dir
@@ -327,7 +326,7 @@ def main():
     parser.add_argument('--delay', type=float, default=1.0, 
                         help='Delay between requests in seconds')
     parser.add_argument('--output-dir', type=str, 
-                        default='/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/gathered_data',
+                        default='/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/gathered_data',
                         help='Directory to save gathered data')
     parser.add_argument('--sources-file', type=str, default=None,
                         help='JSON file with custom sources configuration')

@@ -3,9 +3,9 @@
 # Created on: June 23, 2025
 
 # Set variables
-TARGET_DIR="/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets"
+TARGET_DIR="/workspaces/ZamAI-Pashto-Data-Processing-Pipeline"
 OLD_PATH="/workspaces/pashto-text-dataset"
-NEW_PATH="/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets"
+NEW_PATH="/workspaces/ZamAI-Pashto-Data-Processing-Pipeline"
 
 echo "========================================="
 echo "Updating paths in Python files to use ZamAI_Pashto_Datasets"

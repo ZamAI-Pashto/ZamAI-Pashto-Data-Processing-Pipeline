@@ -10,7 +10,7 @@ from matplotlib.path import Path
 import matplotlib.patches as patches
 
 # Create directories if they don't exist
-os.makedirs('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset', exist_ok=True)
+os.makedirs('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset', exist_ok=True)
 
 # Set up the figure
 plt.figure(figsize=(16, 10))
@@ -174,7 +174,7 @@ plt.text(42.5, 13, "Comprehensive_Data_Cleaning.ipynb", ha='center', va='center'
 plt.text(47.5, 5, "combine_data.py", ha='center', va='center', fontsize=7, color='darkblue', rotation=0)
 
 # Save the figure
-plt.savefig('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_data_processing_workflow.png', dpi=300, bbox_inches='tight')
+plt.savefig('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_data_processing_workflow.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("Visualization created at: /workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_data_processing_workflow.png")
+print("Visualization created at: /workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_data_processing_workflow.png")

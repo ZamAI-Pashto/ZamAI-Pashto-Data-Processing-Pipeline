@@ -10,8 +10,8 @@ import numpy as np
 from matplotlib.path import Path
 import matplotlib.patches as patches
 
-# Create directories if they don't exist
-os.makedirs('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset', exist_ok=True)
+# Create output directory if it doesn't exist
+os.makedirs('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset', exist_ok=True)
 
 # Set up the figure
 plt.figure(figsize=(14, 10))
@@ -153,7 +153,7 @@ plt.text(50, 70-3, explanation_text, ha='center', va='top', fontsize=9,
          bbox=dict(facecolor='white', alpha=0.7, boxstyle="round,pad=0.5"))
 
 # Save the figure
-plt.savefig('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_data_transformation_process.png', dpi=300, bbox_inches='tight')
+plt.savefig('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_data_transformation_process.png', dpi=300, bbox_inches='tight')
 plt.close()
 
-print("Visualization created at: /workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/asset/pashto_data_transformation_process.png")
+print("Visualization created at: /workspaces/ZamAI-Pashto-Data-Processing-Pipeline/asset/pashto_data_transformation_process.png")

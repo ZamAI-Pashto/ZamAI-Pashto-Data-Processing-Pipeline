@@ -2,7 +2,7 @@
 # Script to gather, clean, and normalize Pashto text data
 
 # Set variables
-WORKSPACE_DIR="/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets"
+WORKSPACE_DIR="/workspaces/ZamAI-Pashto-Data-Processing-Pipeline"
 SCRIPT_DIR="$WORKSPACE_DIR/scripts"
 GATHERED_DIR="$WORKSPACE_DIR/gathered_data"
 CLEANED_DIR="$WORKSPACE_DIR/cleaned_data"
