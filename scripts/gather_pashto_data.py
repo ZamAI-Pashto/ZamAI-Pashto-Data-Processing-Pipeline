@@ -21,6 +21,7 @@ import argparse
 import logging
 import concurrent.futures
 import json
+import subprocess
 
 # Configure logging
 logging.basicConfig(
