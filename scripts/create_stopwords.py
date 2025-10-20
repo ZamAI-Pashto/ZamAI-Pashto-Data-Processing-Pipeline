@@ -7,18 +7,22 @@ import pandas as pd
 # Common Pashto stop words (pronouns, conjunctions, prepositions)
 pashto_stopwords = [
     # Pronouns
-    'ښه', 'خدای', 'نور', 'مهرباني'  # Add more Pashto stopwords as needed
-]
-
-df = pd.DataFrame(pashto_stopwords)
-df.to_csv('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv', index=False, header=False, encoding='utf-8')
-print("Stopwords file created successfully!")
+    'زه', 'ته', 'هغه', 'هغې', 'موږ', 'تاسو', 'دوی',
+    # Conjunctions
+    'او', 'یا', 'خو', 'چې', 'که', 'لکه',
+    # Prepositions
+    'په', 'د', 'له', 'تر', 'نه', 'ته', 'لپاره',
+    # Articles and demonstratives
+    'دا', 'هغه', 'دغه', 'همدا',
+    # Common words
+    'ښه', 'نور', 'هم', 'یو', 'یوه', 'ډېر', 'لږ'
 ]
 
 # Create the DataFrame with the stopwords
 df = pd.DataFrame(pashto_stopwords)
 
-# Save to CSV
-df.to_csv('/workspaces/pashto-text-dataset/ZamAI_Pashto_Datasets/stopwords.csv', index=False, header=False, encoding='utf-8')
+# Save to CSV in the project root
+df.to_csv('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv', index=False, header=False, encoding='utf-8')
 
 print(f"Created stopwords.csv with {len(pashto_stopwords)} Pashto stopwords.")
+
