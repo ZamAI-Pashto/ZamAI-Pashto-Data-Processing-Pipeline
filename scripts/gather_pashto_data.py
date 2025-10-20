@@ -36,7 +36,6 @@ logger = logging.getLogger(__name__)
 # Load stopwords for text cleaning
 def load_stopwords():
     try:
-        try:
         stopwords = pd.read_csv('/workspaces/ZamAI-Pashto-Data-Processing-Pipeline/stopwords.csv', header=None)[0].tolist()
         return stopwords
     except FileNotFoundError:
