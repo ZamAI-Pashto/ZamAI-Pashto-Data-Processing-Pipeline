@@ -4,3 +4,69 @@
 2025-10-20 08:47:54,712 - INFO - Starting data gathering from 5 sources...
 2025-10-20 08:47:54,713 - INFO - Processing source: BBC Pashto
 2025-10-20 08:47:54,713 - INFO - Getting article URLs from BBC Pashto...
+2025-10-20 08:47:57,108 - INFO - Found 0 article URLs from BBC Pashto
+2025-10-20 08:47:59,738 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-10-20 08:47:59,738 - INFO - Processing source: VOA Pashto
+2025-10-20 08:47:59,738 - INFO - Getting article URLs from VOA Pashto...
+2025-10-20 08:48:01,073 - INFO - Found 2 article URLs from VOA Pashto
+2025-10-20 08:48:05,991 - INFO - Successfully gathered 2 articles from VOA Pashto
+2025-10-20 08:48:05,994 - INFO - Saved 2 articles to gathered_data/20251020_084805_voa_pashto.csv
+2025-10-20 08:48:05,995 - INFO - Saved 2 articles to gathered_data/20251020_084805_voa_pashto.json
+2025-10-20 08:48:05,995 - INFO - Processing source: Azadi Radio
+2025-10-20 08:48:05,996 - INFO - Getting article URLs from Azadi Radio...
+2025-10-20 08:48:06,823 - INFO - Found 2 article URLs from Azadi Radio
+2025-10-20 08:48:11,849 - INFO - Successfully gathered 2 articles from Azadi Radio
+2025-10-20 08:48:11,851 - INFO - Saved 2 articles to gathered_data/20251020_084811_azadi_radio.csv
+2025-10-20 08:48:11,852 - INFO - Saved 2 articles to gathered_data/20251020_084811_azadi_radio.json
+2025-10-20 08:48:11,853 - INFO - Processing source: Tolonews
+2025-10-20 08:48:11,853 - INFO - Getting article URLs from Tolonews...
+2025-10-20 08:48:12,500 - ERROR - Failed to get content from https://tolonews.com/ps: Status 404
+2025-10-20 08:48:12,501 - INFO - Successfully gathered 0 articles from Tolonews
+2025-10-20 08:48:12,501 - INFO - Processing source: Pajhwok
+2025-10-20 08:48:12,501 - INFO - Getting article URLs from Pajhwok...
+2025-10-20 08:48:13,793 - INFO - Found 0 article URLs from Pajhwok
+2025-10-20 08:48:16,180 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-10-20 08:48:16,183 - INFO - Saved 4 articles to gathered_data/20251020_084816_all_gathered_articles.csv
+2025-10-20 08:48:16,184 - INFO - Saved 4 articles to gathered_data/20251020_084816_all_gathered_articles.json
+2025-10-20 08:48:16,184 - INFO - Data gathering complete! Collected 4 articles in total
+2025-10-20 08:48:16,185 - INFO - Content length statistics:
+2025-10-20 08:48:16,187 - INFO -   Mean: 4787.00 characters
+2025-10-20 08:48:16,187 - INFO -   Min: 2552 characters
+2025-10-20 08:48:16,187 - INFO -   Max: 6450 characters
+2025-10-20 08:48:16,191 - INFO -   Median: 5073.0 characters
+2025-10-20 08:48:16,191 - INFO - All data saved to gathered_data
+2025-10-20 08:51:17,191 - INFO - Starting data gathering process...
+2025-10-20 08:51:17,191 - INFO - Starting data gathering from 5 sources...
+2025-10-20 08:51:17,191 - INFO - Processing source: BBC Pashto
+2025-10-20 08:51:17,192 - INFO - Getting article URLs from BBC Pashto...
+2025-10-20 08:51:17,660 - INFO - Found 0 article URLs from BBC Pashto
+2025-10-20 08:51:19,257 - INFO - Successfully gathered 0 articles from BBC Pashto
+2025-10-20 08:51:19,258 - INFO - Processing source: VOA Pashto
+2025-10-20 08:51:19,258 - INFO - Getting article URLs from VOA Pashto...
+2025-10-20 08:51:20,151 - INFO - Found 1 article URLs from VOA Pashto
+2025-10-20 08:51:24,013 - INFO - Successfully gathered 1 articles from VOA Pashto
+2025-10-20 08:51:24,017 - INFO - Saved 1 articles to gathered_data/20251020_085124_voa_pashto.csv
+2025-10-20 08:51:24,019 - INFO - Saved 1 articles to gathered_data/20251020_085124_voa_pashto.json
+2025-10-20 08:51:24,020 - INFO - Processing source: Azadi Radio
+2025-10-20 08:51:24,021 - INFO - Getting article URLs from Azadi Radio...
+2025-10-20 08:51:24,241 - INFO - Found 1 article URLs from Azadi Radio
+2025-10-20 08:51:28,444 - INFO - Successfully gathered 1 articles from Azadi Radio
+2025-10-20 08:51:28,448 - INFO - Saved 1 articles to gathered_data/20251020_085128_azadi_radio.csv
+2025-10-20 08:51:28,448 - INFO - Saved 1 articles to gathered_data/20251020_085128_azadi_radio.json
+2025-10-20 08:51:28,448 - INFO - Processing source: Tolonews
+2025-10-20 08:51:28,449 - INFO - Getting article URLs from Tolonews...
+2025-10-20 08:51:28,822 - ERROR - Failed to get content from https://tolonews.com/ps: Status 404
+2025-10-20 08:51:28,823 - INFO - Successfully gathered 0 articles from Tolonews
+2025-10-20 08:51:28,823 - INFO - Processing source: Pajhwok
+2025-10-20 08:51:28,823 - INFO - Getting article URLs from Pajhwok...
+2025-10-20 08:51:29,336 - INFO - Found 0 article URLs from Pajhwok
+2025-10-20 08:51:31,298 - INFO - Successfully gathered 0 articles from Pajhwok
+2025-10-20 08:51:31,301 - INFO - Saved 2 articles to gathered_data/20251020_085131_all_gathered_articles.csv
+2025-10-20 08:51:31,301 - INFO - Saved 2 articles to gathered_data/20251020_085131_all_gathered_articles.json
+2025-10-20 08:51:31,302 - INFO - Data gathering complete! Collected 2 articles in total
+2025-10-20 08:51:31,303 - INFO - Content length statistics:
+2025-10-20 08:51:31,303 - INFO -   Mean: 4501.00 characters
+2025-10-20 08:51:31,303 - INFO -   Min: 2552 characters
+2025-10-20 08:51:31,303 - INFO -   Max: 6450 characters
+2025-10-20 08:51:31,304 - INFO -   Median: 4501.0 characters
+2025-10-20 08:51:31,304 - INFO - All data saved to gathered_data
